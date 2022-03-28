@@ -1,0 +1,26 @@
+#1
+
+
+import random
+pol = [random.randrange(-2000, 5000) for i in range(10)]
+print ("рандомный список чисел(без запятой): " +  str(pol))
+
+#1/(1)
+sum1 = sum2 = 0
+for i in pol:
+    if i > 0:
+        sum1 += i
+    else:
+        sum2 += i
+    
+print('Сумма положительных:', sum1, 'Сумма отрицательных:', sum2)
+
+#1/(2,3)
+x=0
+y=0
+for n in pol:
+    x += (1 - n % 2) * n
+    y += (n % 2) * n
+print('Сумма четных:', x, 'Сумма нечетных:', y)
+
+#1/3
